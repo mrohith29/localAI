@@ -1,6 +1,6 @@
 [project]
-name = "localai"
-version = "0.1.9"
+name = "localgpt"
+version = "0.1.1"
 authors = [
   { name="Mariyala Rohith", email="mariyalarohith29@gmail.com" },
 ]
@@ -14,5 +14,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mrohith29/localai"
-Issues = "https://github.com/mrohith29/localai/issues"
+Homepage = "https://github.com/mrohith29/localgpt"
+Issues = "https://github.com/mrohith29/localgpt/issues"

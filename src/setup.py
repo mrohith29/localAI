@@ -4,18 +4,18 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="localai",
+    name="localgpt",
     version="0.1.1",
     description="Enables you to chat with AI locally",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mrohith29/localai",
+    url="https://github.com/mrohith29/localgpt",
     author="Mariyala Rohith",
     author_email="mariyalarohith29@gmail.com",
     license="MIT",
     project_urls={
-        "Homepage": "https://github.com/mrohith29/localai",
-        "Issues": "https://github.com/mrohith29/localai/issues",
+        "Homepage": "https://github.com/mrohith29/localgpt",
+        "Issues": "https://github.com/mrohith29/localgpt/issues",
     },
     classifiers=[
         "License :: OSI Approved :: MIT License",
