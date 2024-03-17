@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/setup.py
+src/nonetchat.egg-info/PKG-INFO
+src/nonetchat.egg-info/SOURCES.txt
+src/nonetchat.egg-info/dependency_links.txt
+src/nonetchat.egg-info/top_level.txt
