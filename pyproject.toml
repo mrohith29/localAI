@@ -1,0 +1,18 @@
+[project]
+name = "localai"
+version = "0.1.9"
+authors = [
+  { name="Mariyala Rohith", email="mariyalarohith29@gmail.com" },
+]
+description = "Enables you to chat with ai locally"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mrohith29/localai"
+Issues = "https://github.com/mrohith29/localai/issues"
