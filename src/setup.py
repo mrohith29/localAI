@@ -4,18 +4,18 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="localgpt",
+    name="nonetchat",
     version="0.1.1",
-    description="Enables you to chat with AI locally",
+    description="Enables you to chat with AI locally without internet",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mrohith29/localgpt",
+    url="https://github.com/mrohith29/nonetchat",
     author="Mariyala Rohith",
     author_email="mariyalarohith29@gmail.com",
     license="MIT",
     project_urls={
-        "Homepage": "https://github.com/mrohith29/localgpt",
-        "Issues": "https://github.com/mrohith29/localgpt/issues",
+        "Homepage": "https://github.com/mrohith29/nonetchat",
+        "Issues": "https://github.com/mrohith29/nonetchat/issues",
     },
     classifiers=[
         "License :: OSI Approved :: MIT License",

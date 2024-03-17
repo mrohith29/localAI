@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/setup.py
+src/localgpt.egg-info/PKG-INFO
+src/localgpt.egg-info/SOURCES.txt
+src/localgpt.egg-info/dependency_links.txt
+src/localgpt.egg-info/top_level.txt
