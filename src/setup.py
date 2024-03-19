@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="nonetchat",
-    version="0.1.1",
+    name="chatlocalai",
+    version="0.1.5",
     description="Enables you to chat with AI locally without internet",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -26,10 +26,10 @@ setuptools.setup(
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
     include_package_data=True,
-    install_requires=["rich"],
+    install_requires=["rich", "ollama"],
     entry_points={
         "console_scripts": [
-            "sweety=run.__init__",
+            "hey=hey.__init__",
         ]
     },
 )
