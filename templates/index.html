@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistral Chat</title>
+</head>
+<body>
+    <h1>Mistral Chat</h1>
+    <form action="/generate" method="post">
+        <label for="question">Enter your question:</label><br>
+        <textarea id="question" name="question" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if question %}
+        <h2>Your question:</h2>
+        <p>{{ question }}</p>
+    {% endif %}
+    {% if response %}
+        <h2>Mistral's response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>

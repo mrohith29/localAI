@@ -20,7 +20,7 @@ $content = json_decode($body->getContents());
 echo $content[0]->generated_text;
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -64,4 +64,4 @@ echo $content[0]->generated_text;
     </script>
 </body>
 
-</html>
+</html> -->

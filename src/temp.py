@@ -1,6 +1,6 @@
 import ollama
 
-message = ollama.chat(model = 'llama2', messages = [
+message = ollama.chat(model = 'mistral', messages = [
     {
         'role' : 'user',
         'content' : 'Why sky is blue',
