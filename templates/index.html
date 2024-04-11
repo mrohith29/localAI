@@ -7,18 +7,18 @@
 </head>
 <body>
     <h1>Mistral Chat</h1>
-    <form action="/generate" method="post">
+    <form action="/" method="post">
         <label for="question">Enter your question:</label><br>
         <textarea id="question" name="question" rows="4" cols="50"></textarea><br>
         <input type="submit" value="Submit">
     </form>
-    {% if question %}
+    {% if quest %}
         <h2>Your question:</h2>
-        <p>{{ question }}</p>
+        <p>{{ quest }}</p>
     {% endif %}
-    {% if response %}
-        <h2>Mistral's response:</h2>
-        <p>{{ response }}</p>
+    {% if resp %}
+        <h2>Orca-mini's response:</h2>
+        <p>{{ resp }}</p>
     {% endif %}
 </body>
 </html>

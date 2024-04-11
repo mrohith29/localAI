@@ -20,17 +20,20 @@ def home():
     return render_template('index.html')
 
 # Route to handle form submission
-@app.route('/generate', methods=['POST'])
-def generate_response():
-    if request.method == 'POST':
-        question = request.form['question']
-        # Tokenize input question
-        input_ids = tokenizer.encode(question, return_tensors='pt')
-        # Generate response
-        output = model.generate(input_ids, max_length=max_length, num_return_sequences=1)
-        # Decode generated tokens to text
-        response = tokenizer.decode(output[0], skip_special_tokens=True)
-        return render_template('index.html', question=question, response=response)
+# @app.route('/generate', methods=['POST'])
+
+# def generate_response():
+#     if request.method == 'POST':
+#         question = request.form['question']
+#         # Tokenize input question
+#         input_ids = tokenizer.encode(question, return_tensors='pt')
+#         # Generate response
+#         output = model.generate(input_ids, max_length=max_length, num_return_sequences=1)
+#         # Decode generated tokens to text
+#         response = tokenizer.decode(output[0], skip_special_tokens=True)
+#         return render_template('index.html', question=question, response=response)
+
+
 
 if __name__ == '__main__':
     # app.run(debug=True)
