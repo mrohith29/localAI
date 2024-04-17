@@ -1,0 +1,23 @@
+body {
+    background-image: url(background.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;   
+    /* background-color: antiquewhite; */
+}
+
+ label {
+    font-weight: 1000;
+}
+/*
+textarea {
+    align-content: baseline;
+} */
+
+.input-area {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}

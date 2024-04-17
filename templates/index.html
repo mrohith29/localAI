@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mistral Chat</title>
+    <title>Orca-mini Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
 </head>
 <body>
-    <h1>Mistral Chat</h1>
-    <form action="/" method="post">
+    <h1>LocalAI Chat</h1>
+    <form action="/" method="post" class="input-area">
         <label for="question">Enter your question:</label><br>
-        <textarea id="question" name="question" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Submit">
+        <textarea id="question" name="question" rows="4" cols="100"></textarea><br>
+        <input type="submit" value="📤">
     </form>
     {% if quest %}
         <h2>Your question:</h2>

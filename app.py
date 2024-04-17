@@ -13,7 +13,7 @@ def home():
         "prompt": str(question)
         }
 
-        response = requests.post("http://127.0.0.1:11434/api/generate", json=data, stream=False)
+        response = requests.post("http://127.0.0.1:11434/api/generate", json=data, stream=True)
 
         if 'application/x-ndjson' in response.headers.get('Content-Type'):
             lines = response.text.splitlines()
