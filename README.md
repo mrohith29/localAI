@@ -52,7 +52,7 @@ Follow these instructions to set up and run the project locally.
 
 ### Project Structure
 
-    localai-chat/
+    localAI/
     │
     ├── static/
     │   └── styles.css
