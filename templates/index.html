@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orca-mini Chat</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <script>
+        function startSSE(question) {
+            const eventSource = new EventSource(`/stream?question=${question}`);
+            const responseElement = document.getElementById('response');
+            responseElement.innerHTML = '';
+
+            eventSource.onmessage = function(event) {
+                responseElement.innerHTML += event.data + ' ';
+            };
+
+            eventSource.onerror = function() {
+                console.error('EventSource failed.');
+                eventSource.close();
+            };
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            const question = document.getElementById('question').value;
+            document.getElementById('quest').innerText = question;
+            startSSE(question);
+        }
+    </script>
 </head>
 <body>
     <h1>LocalAI Chat</h1>
-    <form action="/" method="post" class="input-area">
+    <form onsubmit="submitForm(event)" class="input-area">
         <label for="question">Enter your question:</label><br>
         <textarea id="question" name="question" rows="4" cols="100"></textarea><br>
         <input type="submit" value="📤">
     </form>
-    {% if quest %}
-        <h2>Your question:</h2>
-        <p>{{ quest }}</p>
-    {% endif %}
-    {% if resp %}
-        <h2>Orca-mini's response:</h2>
-        <p>{{ resp }}</p>
-    {% endif %}
+    <h2>Your question:</h2>
+    <p id="quest"></p>
+    <h2>AI response:</h2>
+    <div id="response"></div>
 </body>
 </html>
