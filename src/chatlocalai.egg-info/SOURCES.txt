@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-src/__init__.py
-src/setup.py
-src/chatlocalai.egg-info/PKG-INFO
-src/chatlocalai.egg-info/SOURCES.txt
-src/chatlocalai.egg-info/dependency_links.txt
-src/chatlocalai.egg-info/top_level.txt
