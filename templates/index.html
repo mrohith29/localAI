@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,11 @@
             const responseElement = document.getElementById('response');
             responseElement.innerHTML = '';
 
-            eventSource.onmessage = function(event) {
+            eventSource.onmessage = function (event) {
                 responseElement.innerHTML += event.data + ' ';
             };
 
-            eventSource.onerror = function() {
+            eventSource.onerror = function () {
                 console.error('EventSource failed.');
                 eventSource.close();
             };
@@ -29,6 +30,7 @@
         }
     </script>
 </head>
+
 <body>
     <h1>LocalAI Chat</h1>
     <form onsubmit="submitForm(event)" class="input-area">
@@ -41,4 +43,5 @@
     <h2>AI response:</h2>
     <div id="response"></div>
 </body>
+
 </html>
